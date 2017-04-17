@@ -1,0 +1,1686 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <!-- 设置浏览器的兼容模式版本（让IE使用最新的渲染引擎巩工作） -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>传智播客 - 安全的互联网微金融资产交易平台</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+  <!--[if lt IE 9]>
+    <script src="lib/html5shiv/html5shiv.min.js"></script>
+    <script src="lib/respond/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+    <!-- 头部区域 -->
+    <header id="header">
+        <!-- <div class="topbar hidden-sm hidden-xs"> -->
+        <!-- 规定那种情况topbar显示 -->
+        <!-- 通栏 -->
+        <div class="topbar visible-md visible-lg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 text-center">
+                        <a href="#" class="mobile-link">
+                            <i class="icon-mobilephone"></i>
+                            <span>手机微金所</span>
+                            <!-- 这里使用的是bootstrap中的字体图标 -->
+                            <i class="glyphicon glyphicon-chevron-down"></i>
+                            <img src="img/c_06.jpg" alt="扫一扫">
+                        </a>
+                    </div>
+                    <div class="col-md-5 text-center">
+                        <i class="icon-telephone"></i>
+                        <span>4006-89-4006（服务时间：9:00-21:00）</span>
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <a href="#" class="text-muted">常见问题</a>
+                        <a href="#" class="text-muted">财富登录</a>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <a href="#" class="btn btn-register btn-sm">免费注册</a>
+                        <a href="" class="btn btn-link btn-sm" data-toggle="modal" data-target="#login_form">登录</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /通栏 -->
+        <!-- 导航栏 -->
+        <nav class="navbar navbar-itcast navbar-static-top" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> <!-- data-offset-top什么时候出现 -->
+          <div class="container">
+            <div class="navbar-header">
+                 <!-- 汉堡菜单 -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav_list" aria-expanded="false">
+                    <span class="sr-only">切换菜单</span>
+                    <!-- 三条杠 -->
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- logo -->
+                <a class="navbar-brand" href="#" >
+                    <i class="icon-icon"></i>
+                    <i class="icon-logo"></i>
+                </a>
+                <!-- /logo -->
+            </div>
+            <div class="collapse navbar-collapse" id="nav_list">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">我要投资</a></li>
+                    <li><a href="#">我要贷款</a></li>
+                    <li><a href="#">平台介绍</a></li>
+                    <li><a href="#">新手专区</a></li>
+                    <li><a href="#">最新动态</a></li>
+                    <li><a href="#">微论坛</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right hidden-sm">
+                    <li><a href="#">个人中心</a></li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- /导航栏 -->
+    </header>
+    <!-- /头部区域 -->
+    <!-- 广告通栏 -->
+    <section id="main_ad" class="carousel slide" data-ride="carousel">
+      <!-- 下面的小点点 -->
+        <ol class="carousel-indicators">
+            <li data-target="#main_ad" data-slide-to="0" class="active"></li>
+            <li data-target="#main_ad" data-slide-to="1"></li>
+            <li data-target="#main_ad" data-slide-to="2"></li>
+            <li data-target="#main_ad" data-slide-to="3"></li>
+        </ol>
+      <!-- 轮播图 -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active" data-image-lg="img/slide_01_2000x410.jpg" data-image-xs="img/slide_01_640x340.jpg"></div>
+        <div class="item" data-image-lg="img/slide_02_2000x410.jpg" data-image-xs="img/slide_02_640x340.jpg"></div>
+        <div class="item" data-image-lg="img/slide_03_2000x410.jpg" data-image-xs="img/slide_03_640x340.jpg"></div>
+        <div class="item" data-image-lg="img/slide_04_2000x410.jpg" data-image-xs="img/slide_04_640x340.jpg"></div>
+      <!-- 控制按钮 -->
+      <a class="left carousel-control" href="#main_ad" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">上一张</span>
+      </a>
+      <a class="right carousel-control" href="#main_ad" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">下一张</span>
+      </a>
+    </section>
+    <!-- /广告通栏 -->
+    <!-- 特色介绍 -->
+    <section id="tese" class="hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <a href="#">
+                        <div class="media">
+                          <div class="media-left">
+                            <i class="icon-uniE907"></i>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">支付交易保证</h4>
+                            <p>银联支付全程保证支付安全</p>
+                          </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <a href="#">
+                        <div class="media">
+                          <div class="media-left">
+                            <i class="icon-uniE907"></i>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">支付交易保证</h4>
+                            <p>银联支付全程保证支付安全</p>
+                          </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <a href="#">
+                        <div class="media">
+                          <div class="media-left">
+                            <i class="icon-uniE907"></i>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">支付交易保证</h4>
+                            <p>银联支付全程保证支付安全</p>
+                          </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <a href="#">
+                        <div class="media">
+                          <div class="media-left">
+                            <i class="icon-uniE907"></i>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">支付交易保证</h4>
+                            <p>银联支付全程保证支付安全</p>
+                          </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <a href="#">
+                        <div class="media">
+                          <div class="media-left">
+                            <i class="icon-uniE907"></i>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">支付交易保证</h4>
+                            <p>银联支付全程保证支付安全</p>
+                          </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <a href="#">
+                        <div class="media">
+                          <div class="media-left">
+                            <i class="icon-uniE907"></i>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">支付交易保证</h4>
+                            <p>银联支付全程保证支付安全</p>
+                          </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /特色介绍 -->
+    <!-- 立即预约 -->
+    <section id="ljyy">
+        <div class="container">
+            <p class="pull-left"><i class="icon-uniE906"></i>现在有<span>458</span>人在排队，累计预约交易成功<span>7409</span>次。 什么是预约投标？ <a href="#">立即预约</a></p>
+            <p class="pull-right hidden-sm hidden-xs"><a href="#"><i class="icon-uniE905"></i>微金所企业宣传片</a></p>
+        </div>
+    </section>
+    <!-- /立即预约 -->
+    <!-- 产品推荐 -->
+    <section id="products">
+        <div class="container">
+        <!-- 
+            第一步：给ul添加一个容器,让该容器出现横向滚动条 
+            第二步:动态设置容器的宽度,宽度是根据内容的大小决定的     
+            width = sum(li.width);
+        -->
+          <!--  选项卡标签 -->
+            <div class="ul-wapper">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#tstj" aria-controls="tstj" role="tab" data-toggle="tab">特别推荐</a></li>
+                    <li role="presentation"><a href="#wtz" aria-controls="wtz" role="tab" data-toggle="tab">微投资</a></li>
+                    <li role="presentation"><a href="#wxb" aria-controls="wxb" role="tab" data-toggle="tab">微小宝</a></li>
+                    <li role="presentation"><a href="#wxf" aria-controls="wxf" role="tab" data-toggle="tab">微消费</a></li>
+                    <li role="presentation"><a href="#wzy" aria-controls="wzy" role="tab" data-toggle="tab">微增益</a></li>
+                    <li role="presentation"><a href="#wjk" aria-controls="wjk" role="tab" data-toggle="tab">微金库</a></li>
+                    <li role="presentation"><a href="#wzr" aria-controls="wzr" role="tab" data-toggle="tab">微转让</a></li>
+                    <li class="pull-right hidden-sm hidden-xs"><a href="#">更多</a></li>
+                </ul>
+            </div>
+          <!-- 选项卡内容 -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active" id="tstj">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="panel panel-itcast actived">
+                                <div class="panel-heading">
+                                    <p>
+                                        <strong>8<sub>%</sub></strong>
+                                        <span>年率利</span>
+                                    </p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>100.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>100.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>100.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>100.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="panel panel-itcast">
+                                <div class="panel-heading">
+                                    <p class="tooltips">
+                                        <a class="badge badge-one" data-toggle="tooltip" data-placement="top" title="北京" href="#">京</a>
+                                        <a class="badge badge-two" data-toggle="tooltip" data-placement="top" title="罗定"  href="#">罗</a>
+                                    </p>
+                                    <p>
+                                        <strong>8<sub>%</sub></strong>
+                                        <span>年率利</span>
+                                    </p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="panel panel-itcast">
+                                <div class="panel-heading">
+                                    <p>
+                                        <strong>8<sub>%</sub></strong>
+                                        <span>年率利</span>
+                                    </p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="panel panel-itcast">
+                                <div class="panel-heading">
+                                    <p>
+                                        <strong>8<sub>%</sub></strong>
+                                        <span>年率利</span>
+                                    </p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="panel panel-itcast disabled">
+                                <div class="panel-heading">
+                                    <p>
+                                        <strong>8<sub>%</sub></strong>
+                                        <span>年率利</span>
+                                    </p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="panel panel-itcast">
+                                <div class="panel-heading">
+                                    <p>
+                                        <strong>8<sub>%</sub></strong>
+                                        <span>年率利</span>
+                                    </p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="wtz">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="panel panel-itcast">
+                                <div class="panel-heading">
+                                    <p>
+                                        <strong>8<sub>%</sub></strong>
+                                        <span>年率利</span>
+                                    </p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>100.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>100.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>100.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>100.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="panel panel-itcast">
+                                <div class="panel-heading">
+                                    <p>
+                                        <strong>8<sub>%</sub></strong>
+                                        <span>年率利</span>
+                                    </p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="panel panel-itcast">
+                                <div class="panel-heading">
+                                    <p>
+                                        <strong>8<sub>%</sub></strong>
+                                        <span>年率利</span>
+                                    </p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="panel panel-itcast">
+                                <div class="panel-heading">
+                                    <p>
+                                        <strong>8<sub>%</sub></strong>
+                                        <span>年率利</span>
+                                    </p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="panel panel-itcast disabled">
+                                <div class="panel-heading">
+                                    <p>
+                                        <strong>8<sub>%</sub></strong>
+                                        <span>年率利</span>
+                                    </p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="panel panel-itcast">
+                                <div class="panel-heading">
+                                    <p>
+                                        <strong>8<sub>%</sub></strong>
+                                        <span>年率利</span>
+                                    </p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="wxb">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="panel panel-itcast actived">
+                                <div class="panel-heading">
+                                    <p>
+                                        <strong>8<sub>%</sub></strong>
+                                        <span>年率利</span>
+                                    </p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>100.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>100.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>100.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>100.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="panel panel-itcast">
+                                <div class="panel-heading">
+                                    <p>
+                                        <strong>8<sub>%</sub></strong>
+                                        <span>年率利</span>
+                                    </p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="panel panel-itcast">
+                                <div class="panel-heading">
+                                    <p>
+                                        <strong>8<sub>%</sub></strong>
+                                        <span>年率利</span>
+                                    </p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="panel panel-itcast">
+                                <div class="panel-heading">
+                                    <p>
+                                        <strong>8<sub>%</sub></strong>
+                                        <span>年率利</span>
+                                    </p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="panel panel-itcast disabled">
+                                <div class="panel-heading">
+                                    <p>
+                                        <strong>8<sub>%</sub></strong>
+                                        <span>年率利</span>
+                                    </p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="panel panel-itcast">
+                                <div class="panel-heading">
+                                    <p>
+                                        <strong>8<sub>%</sub></strong>
+                                        <span>年率利</span>
+                                    </p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="wxf">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="panel panel-itcast actived">
+                                <div class="panel-heading">
+                                    <p>
+                                        <strong>8<sub>%</sub></strong>
+                                        <span>年率利</span>
+                                    </p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>100.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>100.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>100.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>100.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="panel panel-itcast">
+                                <div class="panel-heading">
+                                    <p>
+                                        <strong>8<sub>%</sub></strong>
+                                        <span>年率利</span>
+                                    </p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="panel panel-itcast">
+                                <div class="panel-heading">
+                                    <p>
+                                        <strong>8<sub>%</sub></strong>
+                                        <span>年率利</span>
+                                    </p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="panel panel-itcast">
+                                <div class="panel-heading">
+                                    <p>
+                                        <strong>8<sub>%</sub></strong>
+                                        <span>年率利</span>
+                                    </p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="panel panel-itcast disabled">
+                                <div class="panel-heading">
+                                    <p>
+                                        <strong>8<sub>%</sub></strong>
+                                        <span>年率利</span>
+                                    </p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="panel panel-itcast">
+                                <div class="panel-heading">
+                                    <p>
+                                        <strong>8<sub>%</sub></strong>
+                                        <span>年率利</span>
+                                    </p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="wzy">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="panel panel-itcast actived">
+                                <div class="panel-heading">
+                                    <p>
+                                        <strong>8<sub>%</sub></strong>
+                                        <span>年率利</span>
+                                    </p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>100.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>100.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>100.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>100.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="panel panel-itcast">
+                                <div class="panel-heading">
+                                    <p>
+                                        <strong>8<sub>%</sub></strong>
+                                        <span>年率利</span>
+                                    </p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="panel panel-itcast">
+                                <div class="panel-heading">
+                                    <p>
+                                        <strong>8<sub>%</sub></strong>
+                                        <span>年率利</span>
+                                    </p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="panel panel-itcast">
+                                <div class="panel-heading">
+                                    <p>
+                                        <strong>8<sub>%</sub></strong>
+                                        <span>年率利</span>
+                                    </p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="panel panel-itcast disabled">
+                                <div class="panel-heading">
+                                    <p>
+                                        <strong>8<sub>%</sub></strong>
+                                        <span>年率利</span>
+                                    </p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="panel panel-itcast">
+                                <div class="panel-heading">
+                                    <p>
+                                        <strong>8<sub>%</sub></strong>
+                                        <span>年率利</span>
+                                    </p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="wjk">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="panel panel-itcast actived">
+                                <div class="panel-heading">
+                                    <p>
+                                        <strong>8<sub>%</sub></strong>
+                                        <span>年率利</span>
+                                    </p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>100.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>100.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>100.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>100.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="panel panel-itcast">
+                                <div class="panel-heading">
+                                    <p>
+                                        <strong>8<sub>%</sub></strong>
+                                        <span>年率利</span>
+                                    </p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="panel panel-itcast">
+                                <div class="panel-heading">
+                                    <p>
+                                        <strong>8<sub>%</sub></strong>
+                                        <span>年率利</span>
+                                    </p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="panel panel-itcast">
+                                <div class="panel-heading">
+                                    <p>
+                                        <strong>8<sub>%</sub></strong>
+                                        <span>年率利</span>
+                                    </p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="panel panel-itcast disabled">
+                                <div class="panel-heading">
+                                    <p>
+                                        <strong>8<sub>%</sub></strong>
+                                        <span>年率利</span>
+                                    </p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="panel panel-itcast">
+                                <div class="panel-heading">
+                                    <p>
+                                        <strong>8<sub>%</sub></strong>
+                                        <span>年率利</span>
+                                    </p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="wzr">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="panel panel-itcast actived">
+                                <div class="panel-heading">
+                                    <p>
+                                        <strong>8<sub>%</sub></strong>
+                                        <span>年率利</span>
+                                    </p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>100.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>100.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>100.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>100.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="panel panel-itcast">
+                                <div class="panel-heading">
+                                    <p>
+                                        <strong>8<sub>%</sub></strong>
+                                        <span>年率利</span>
+                                    </p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="panel panel-itcast">
+                                <div class="panel-heading">
+                                    <p>
+                                        <strong>8<sub>%</sub></strong>
+                                        <span>年率利</span>
+                                    </p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="panel panel-itcast">
+                                <div class="panel-heading">
+                                    <p>
+                                        <strong>8<sub>%</sub></strong>
+                                        <span>年率利</span>
+                                    </p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="panel panel-itcast disabled">
+                                <div class="panel-heading">
+                                    <p>
+                                        <strong>8<sub>%</sub></strong>
+                                        <span>年率利</span>
+                                    </p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="panel panel-itcast">
+                                <div class="panel-heading">
+                                    <p>
+                                        <strong>8<sub>%</sub></strong>
+                                        <span>年率利</span>
+                                    </p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p class="title">起步价</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /产品推荐 -->
+    <!-- 新闻区域 -->
+    <section id="news">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2 col-sm-offset-3">
+                    <div class="news-title">
+                        全部新闻
+                    </div>
+                </div>
+                <div class="col-sm-1">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li role="presentation" class="active"><a  data-toggle="tab" role="tab" data-title="全部新闻" href="#news01"><i class="icon-news01"></i></a></li>
+                        <li role="presentation"><a  data-toggle="tab" role="tab" data-title="全部新闻2" href="#news02"><i class="icon-news02"></i></a></li>
+                        <li role="presentation"><a  data-toggle="tab" role="tab" data-title="全部新闻3" href="#news03"><i class="icon-news03"></i></a></li>
+                        <li role="presentation"><a  data-toggle="tab" role="tab" data-title="全部新闻4" href="#news04"><i class="icon-news04"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane fade in active" id="news01">
+                            <ul>
+                                <li>微金所发钱了，快来抢啊啊！！！！！！</li>
+                                <li>微金所发钱了，快来抢啊啊！！！！！！</li>
+                                <li>微金所发钱了，快来抢啊啊！！！！！！</li>
+                                <li>微金所发钱了，快来抢啊啊！！！！！！</li>
+                                <li>微金所发钱了，快来抢啊啊！！！！！！</li>
+                                <li>微金所发钱了，快来抢啊啊！！！！！！</li>
+                                <li>微金所发钱了，快来抢啊啊！！！！！！</li>
+                            </ul>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="news02">
+                            <ul>
+                                <li>微金所发钱了2，快来抢啊啊！！！！！！</li>
+                                <li>微金所发钱了2，快来抢啊啊！！！！！！</li>
+                                <li>微金所发钱了2，快来抢啊啊！！！！！！</li>
+                                <li>微金所发钱了2，快来抢啊啊！！！！！！</li>
+                                <li>微金所发钱了2，快来抢啊啊！！！！！！</li>
+                                <li>微金所发钱了2，快来抢啊啊！！！！！！</li>
+                                <li>微金所发钱了2，快来抢啊啊！！！！！！</li>
+                            </ul>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="news03">
+                            <ul>
+                                <li>微金所发钱了3，快来抢啊啊！！！！！！</li>
+                                <li>微金所发钱了3，快来抢啊啊！！！！！！</li>
+                                <li>微金所发钱了3，快来抢啊啊！！！！！！</li>
+                                <li>微金所发钱了3，快来抢啊啊！！！！！！</li>
+                                <li>微金所发钱了3，快来抢啊啊！！！！！！</li>
+                                <li>微金所发钱了3，快来抢啊啊！！！！！！</li>
+                                <li>微金所发钱了3，快来抢啊啊！！！！！！</li>
+                            </ul>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="news04">
+                            <ul>
+                                <li>微金所发钱了4，快来抢啊啊！！！！！！</li>
+                                <li>微金所发钱了4，快来抢啊啊！！！！！！</li>
+                                <li>微金所发钱了4，快来抢啊啊！！！！！！</li>
+                                <li>微金所发钱了4，快来抢啊啊！！！！！！</li>
+                                <li>微金所发钱了4，快来抢啊啊！！！！！！</li>
+                                <li>微金所发钱了4，快来抢啊啊！！！！！！</li>
+                                <li>微金所发钱了4，快来抢啊啊！！！！！！</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /新闻区域 -->
+    <!-- 合作伙伴 -->
+    <section id="hzhb">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <h3>合作伙伴</h3>
+                    <ul>
+                        <li><a class="icon-uniE930" href="#"></a></li>
+                        <li><a class="icon-uniE92F" href="#"></a></li>
+                        <li><a class="icon-uniE92E" href="#"></a></li>
+                        <li><a class="icon-uniE92A" href="#"></a></li>
+                        <li><a class="icon-uniE929" href="#"></a></li>
+                        <li><a class="icon-uniE931" href="#"></a></li>
+                        <li><a class="icon-uniE92C" href="#"></a></li>
+                        <li><a class="icon-uniE92B" href="#"></a></li>
+                        <li><a class="icon-uniE92D" href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /合作伙伴 -->
+    <!-- 脚注区域 -->
+    <footer id="footer"></footer>
+    <!-- /脚注区域 -->
+
+    <!-- 登录模态框 -->
+        <div class="modal fade" id="login_form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">登录微金所</h4>
+                    </div>
+                    <div class="modal-body">
+                        正文内容              
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- /登录模态框 -->
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
